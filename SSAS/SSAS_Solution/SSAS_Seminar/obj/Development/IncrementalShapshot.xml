@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_Seminar</Database>
+    <Server>vandoan</Server>
+    <ConnectionString>DataSource=vandoan;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>A5wWw4dW5vyXMLZoVAyJI9n82cU=15-Nov-17 16:23:4515-Nov-17 16:23:45</TimeStamp>
+        <ID>
+          <String>Seminar1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>W6h+s7kntqcVlgeA0/uj+MOXgr0=15-Nov-17 16:23:5815-Nov-17 16:23:58</TimeStamp>
+        <ID>
+          <String>Seminar1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>G5Hsz3cWE+g7LqXpCWWR3SLZt+4=15-Nov-17 16:24:1115-Nov-17 16:24:11</TimeStamp>
+        <ID>
+          <String>Grade</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>H4pujLSEBYSmDb7oEZBmcW8uhlQ=15-Nov-17 16:24:3815-Nov-17 16:24:11</TimeStamp>
+        <ID>
+          <String>Data Level</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fB596USJeakAikJBDKEvwbG8ziw=15-Nov-17 16:24:3815-Nov-17 16:24:11</TimeStamp>
+        <ID>
+          <String>School Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sEAS11/UAfpoCnnYCo9hnDQEn78=15-Nov-17 16:24:3815-Nov-17 16:24:11</TimeStamp>
+        <ID>
+          <String>Sub Population</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>o6oGUPKoBlmNmqHvLIjhN058cKE=15-Nov-17 16:24:3815-Nov-17 16:24:11</TimeStamp>
+        <ID>
+          <String>District</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>j1EK3pJfzVa5MiWeWwGIvK+eIuM=15-Nov-17 16:24:3815-Nov-17 16:24:11</TimeStamp>
+        <ID>
+          <String>Fsa Skill Code</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ucbBIowQtRrMc7mZRTnDAQf2Wjs=15-Nov-17 16:24:3815-Nov-17 16:24:11</TimeStamp>
+        <ID>
+          <String>School</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>G0BA4AqzmZd7qQXk5FRJ1lSmrsk=15-Nov-17 16:43:3215-Nov-17 16:43:24zCCqhGPVH3pCfMXQuQ9B6s4GOww=15-Nov-17 16:43:2415-Nov-17 16:43:24</TimeStamp>
+        <ID>
+          <String>Seminar1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>jWsvYSCUjFjvdAvQc2jhFClyqFc=15-Nov-17 16:47:5915-Nov-17 16:46:39wQPgH1alP8UafdxiavUOyYHsqZ8=15-Nov-17 16:47:5915-Nov-17 16:46:39</TimeStamp>
+        <ID>
+          <String>Cau2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>XwTTTovz1mDsjcQLwz1AeTHhFCo=15-Nov-17 16:55:5915-Nov-17 16:51:50L/SkQEp1i+lJUNGnjVCT6ApdjXI=15-Nov-17 16:55:5915-Nov-17 16:51:50</TimeStamp>
+        <ID>
+          <String>Cau3</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>SxAbHlexO8MzRIaz6vWkxHFN8lc=15-Nov-17 16:03:3015-Nov-17 16:03:30</TimeStamp>
+      <ID>
+        <String>SSAS_Seminar</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2017-11-15T09:56:45.273333Z</LastDeployed>
+</DeploymentSnapshot>
