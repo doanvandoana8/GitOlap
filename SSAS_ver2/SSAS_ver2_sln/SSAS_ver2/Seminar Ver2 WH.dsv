@@ -1,0 +1,229 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="af627367-e757-47e1-b99f-a49a378db1f1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Seminar Ver2 WH</ID>
+  <Name>Seminar Ver2 WH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Seminar Ver2 WH</DataSourceID>
+  <Schema>
+    <xs:schema id="Seminar_x0020_Ver2_x0020_WH" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Seminar_x0020_Ver2_x0020_WH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="be555443-d59e-47c0-8859-835c5388fe39">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fatc" msprop:design-time-name="bced85c3-749a-4f76-9fda-0f1fcf0d5ff1" msprop:DbTableName="Fatc" msprop:FriendlyName="Fatc" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FACT_ID" msprop:design-time-name="d2c79100-0d58-40fe-97c3-c72b8ca02261" msprop:DbColumnName="FACT_ID" msprop:FriendlyName="FACT_ID" type="xs:int" />
+                  <xs:element name="SCHOOL_YEAR_ID" msprop:design-time-name="f4f585cb-ca23-4ef5-8ce0-1592e8d056e3" msprop:DbColumnName="SCHOOL_YEAR_ID" msprop:FriendlyName="SCHOOL_YEAR_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DATA_LEVEL_ID" msprop:design-time-name="aef79fb1-4565-4d66-b959-25d84ddb4821" msprop:DbColumnName="DATA_LEVEL_ID" msprop:FriendlyName="DATA_LEVEL_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="DISTRICT_NUMBER" msprop:design-time-name="1966ad8e-63bb-49d7-84cb-1d4569f2768d" msprop:DbColumnName="DISTRICT_NUMBER" msprop:FriendlyName="DISTRICT_NUMBER" type="xs:int" minOccurs="0" />
+                  <xs:element name="SCHOOL_ID" msprop:design-time-name="d5fc13d1-6a72-48a1-9d3b-2b1ddbecac24" msprop:DbColumnName="SCHOOL_ID" msprop:FriendlyName="SCHOOL_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="SUB_POPULATION_ID" msprop:design-time-name="27bc6920-ce81-4124-bbb3-a5ad078784f3" msprop:DbColumnName="SUB_POPULATION_ID" msprop:FriendlyName="SUB_POPULATION_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="FSA_SKILL_CODE_ID" msprop:design-time-name="a71a93e7-ecfb-49cf-80ee-39da16f2e200" msprop:DbColumnName="FSA_SKILL_CODE_ID" msprop:FriendlyName="FSA_SKILL_CODE_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="GRADE_VALUE" msprop:design-time-name="6d45fad6-436d-45d4-b26a-0f245c9bdf42" msprop:DbColumnName="GRADE_VALUE" msprop:FriendlyName="GRADE_VALUE" type="xs:int" minOccurs="0" />
+                  <xs:element name="NUMBER_EXPECTED_WRITERS" msprop:design-time-name="ec62f198-d034-4568-aaa0-82c6002e21d8" msprop:DbColumnName="NUMBER_EXPECTED_WRITERS" msprop:FriendlyName="NUMBER_EXPECTED_WRITERS" type="xs:int" minOccurs="0" />
+                  <xs:element name="NUMBER_WRITERS" msprop:design-time-name="e6e1c958-4178-4f9a-9314-c74daa55c19b" msprop:DbColumnName="NUMBER_WRITERS" msprop:FriendlyName="NUMBER_WRITERS" type="xs:int" minOccurs="0" />
+                  <xs:element name="NUMBER_UNKNOWN" msprop:design-time-name="0dbb7bf2-feee-4b00-b2fc-d138f497a3c6" msprop:DbColumnName="NUMBER_UNKNOWN" msprop:FriendlyName="NUMBER_UNKNOWN" type="xs:int" minOccurs="0" />
+                  <xs:element name="NUMBER_BELOW" msprop:design-time-name="c05810e5-0e9b-409e-b3fc-e866cd13ea8b" msprop:DbColumnName="NUMBER_BELOW" msprop:FriendlyName="NUMBER_BELOW" type="xs:int" minOccurs="0" />
+                  <xs:element name="NUMBER_MEETING" msprop:design-time-name="68b49c1e-f96c-444f-883e-7829b912b02d" msprop:DbColumnName="NUMBER_MEETING" msprop:FriendlyName="NUMBER_MEETING" type="xs:int" minOccurs="0" />
+                  <xs:element name="NUMBER_EXCEEDING" msprop:design-time-name="f68467cf-da1b-47f5-8306-c410f83a3446" msprop:DbColumnName="NUMBER_EXCEEDING" msprop:FriendlyName="NUMBER_EXCEEDING" type="xs:int" minOccurs="0" />
+                  <xs:element name="SCORE" msprop:design-time-name="7c6cac80-d3f5-467d-9248-b022c94f0b97" msprop:DbColumnName="SCORE" msprop:FriendlyName="SCORE" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SchoolYear" msprop:design-time-name="8234afce-ad62-4875-8df9-7bde1b2d208e" msprop:DbTableName="SchoolYear" msprop:FriendlyName="SchoolYear" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SCHOOL_YEAR_ID" msprop:design-time-name="53be17c7-3f0a-4309-8ce0-f598d6894b87" msprop:DbColumnName="SCHOOL_YEAR_ID" msprop:FriendlyName="SCHOOL_YEAR_ID" type="xs:int" />
+                  <xs:element name="START_YEAR" msprop:design-time-name="22e4913d-bc79-4e0d-b25c-de83f4c576c2" msprop:DbColumnName="START_YEAR" msprop:FriendlyName="START_YEAR" type="xs:int" minOccurs="0" />
+                  <xs:element name="END_YEAR" msprop:design-time-name="2877f33d-a63e-4de1-abc5-9b64ae13f10b" msprop:DbColumnName="END_YEAR" msprop:FriendlyName="END_YEAR" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DataLevel" msprop:design-time-name="a6126261-8e77-45b4-b55d-7f10aa5397bf" msprop:DbTableName="DataLevel" msprop:FriendlyName="DataLevel" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DATA_LEVEL_ID" msprop:design-time-name="df7b9016-9d46-4f67-aeaa-0d68efa3ee24" msprop:DbColumnName="DATA_LEVEL_ID" msprop:FriendlyName="DATA_LEVEL_ID" type="xs:int" />
+                  <xs:element name="DATA_LEVEL_NAME" msprop:design-time-name="62bf7108-5f92-43fd-92b0-986029d2073b" msprop:DbColumnName="DATA_LEVEL_NAME" msprop:FriendlyName="DATA_LEVEL_NAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FsaSkillCode" msprop:design-time-name="71f4ced0-55d3-4ba1-8701-e1b9392f1c44" msprop:DbTableName="FsaSkillCode" msprop:FriendlyName="FsaSkillCode" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FSA_SKILL_CODE_ID" msprop:design-time-name="83616c4c-b668-4b03-8e77-e61e1c0a5180" msprop:DbColumnName="FSA_SKILL_CODE_ID" msprop:FriendlyName="FSA_SKILL_CODE_ID" type="xs:int" />
+                  <xs:element name="FSA_SKILL_CODE" msprop:design-time-name="ca846bb6-abc5-4249-bcaa-f49f93b64776" msprop:DbColumnName="FSA_SKILL_CODE" msprop:FriendlyName="FSA_SKILL_CODE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_District" msprop:design-time-name="33276f76-b952-448d-88ce-200ed2d27926" msprop:DbTableName="District" msprop:FriendlyName="District" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DISTRICT_NUMBER" msprop:design-time-name="d64c3ece-e62e-4d1e-b362-b891cabfc66c" msprop:DbColumnName="DISTRICT_NUMBER" msprop:FriendlyName="DISTRICT_NUMBER" type="xs:int" />
+                  <xs:element name="DISTRICT_NAME" msprop:design-time-name="6b14f0ff-da2d-4448-b3eb-a9990e68fa27" msprop:DbColumnName="DISTRICT_NAME" msprop:FriendlyName="DISTRICT_NAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Grade" msprop:design-time-name="6943321e-930e-435f-85fe-f8e7099baf0c" msprop:DbTableName="Grade" msprop:FriendlyName="Grade" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GRADE_VALUE" msprop:design-time-name="f212be31-918e-49fc-b490-d58fa73178c6" msprop:DbColumnName="GRADE_VALUE" msprop:FriendlyName="GRADE_VALUE" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_School" msprop:design-time-name="e850bd8e-7d68-4ea1-b7b8-5ddedce6a0fe" msprop:DbTableName="School" msprop:FriendlyName="School" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SCHOOL_ID" msprop:design-time-name="052ea74a-20f5-4992-8edf-4e7c99242eee" msprop:DbColumnName="SCHOOL_ID" msprop:FriendlyName="SCHOOL_ID" type="xs:int" />
+                  <xs:element name="SCHOOL_NUMBER" msprop:design-time-name="019bc781-2422-4a3b-815f-3d2ffa7c7697" msprop:DbColumnName="SCHOOL_NUMBER" msprop:FriendlyName="SCHOOL_NUMBER" type="xs:int" minOccurs="0" />
+                  <xs:element name="SCHOOL_TYPE_ID" msprop:design-time-name="caf18a50-77a3-4110-b9a9-466857afb5dc" msprop:DbColumnName="SCHOOL_TYPE_ID" msprop:FriendlyName="SCHOOL_TYPE_ID" type="xs:int" minOccurs="0" />
+                  <xs:element name="SCHOOL_NAME" msprop:design-time-name="94787fa1-4966-4126-9b42-2fb8c50c38fa" msprop:DbColumnName="SCHOOL_NAME" msprop:FriendlyName="SCHOOL_NAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SubPopulation" msprop:design-time-name="1977ba2f-b54e-4788-b19c-60082d91b162" msprop:DbTableName="SubPopulation" msprop:FriendlyName="SubPopulation" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SUB_POPULATION_ID" msprop:design-time-name="f9aa736f-70f9-436e-b889-066397c251a3" msprop:DbColumnName="SUB_POPULATION_ID" msprop:FriendlyName="SUB_POPULATION_ID" type="xs:int" />
+                  <xs:element name="SUB_POPULATION_NAME" msprop:design-time-name="402f4fba-c6ac-47f4-9514-b7719191c2ed" msprop:DbColumnName="SUB_POPULATION_NAME" msprop:FriendlyName="SUB_POPULATION_NAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_SchoolType" msprop:design-time-name="c2dfee50-c834-408c-bcc2-dff18e3e3634" msprop:DbTableName="SchoolType" msprop:FriendlyName="SchoolType" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SCHOOL_TYPE_ID" msprop:design-time-name="64977677-ce81-4bc7-902e-49e4ca43203a" msprop:DbColumnName="SCHOOL_TYPE_ID" msprop:FriendlyName="SCHOOL_TYPE_ID" type="xs:int" />
+                  <xs:element name="SCHOOL_TYPE_NAME" msprop:design-time-name="59e68d5b-72e0-47f4-870a-fb9e5c35b5de" msprop:DbColumnName="SCHOOL_TYPE_NAME" msprop:FriendlyName="SCHOOL_TYPE_NAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fatc" />
+          <xs:field xpath="FACT_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_SchoolYear_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_SchoolYear" />
+          <xs:field xpath="SCHOOL_YEAR_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DataLevel_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DataLevel" />
+          <xs:field xpath="DATA_LEVEL_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_FsaSkillCode_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FsaSkillCode" />
+          <xs:field xpath="FSA_SKILL_CODE_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_District_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_District" />
+          <xs:field xpath="DISTRICT_NUMBER" />
+        </xs:unique>
+        <xs:unique name="dbo_Grade_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Grade" />
+          <xs:field xpath="GRADE_VALUE" />
+        </xs:unique>
+        <xs:unique name="dbo_School_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_School" />
+          <xs:field xpath="SCHOOL_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_SubPopulation_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_SubPopulation" />
+          <xs:field xpath="SUB_POPULATION_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_SchoolType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_SchoolType" />
+          <xs:field xpath="SCHOOL_TYPE_ID" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="Fatc-SchoolYear" msdata:parent="dbo_SchoolYear" msdata:child="dbo_Fatc" msdata:parentkey="SCHOOL_YEAR_ID" msdata:childkey="SCHOOL_YEAR_ID" />
+          <msdata:Relationship name="Fatc-DataLevel" msdata:parent="dbo_DataLevel" msdata:child="dbo_Fatc" msdata:parentkey="DATA_LEVEL_ID" msdata:childkey="DATA_LEVEL_ID" />
+          <msdata:Relationship name="Fatc-District" msdata:parent="dbo_District" msdata:child="dbo_Fatc" msdata:parentkey="DISTRICT_NUMBER" msdata:childkey="DISTRICT_NUMBER" />
+          <msdata:Relationship name="Fatc-School" msdata:parent="dbo_School" msdata:child="dbo_Fatc" msdata:parentkey="SCHOOL_ID" msdata:childkey="SCHOOL_ID" />
+          <msdata:Relationship name="Fatc-SubPopulation" msdata:parent="dbo_SubPopulation" msdata:child="dbo_Fatc" msdata:parentkey="SUB_POPULATION_ID" msdata:childkey="SUB_POPULATION_ID" />
+          <msdata:Relationship name="Fatc-FsaSkillCode" msdata:parent="dbo_FsaSkillCode" msdata:child="dbo_Fatc" msdata:parentkey="FSA_SKILL_CODE_ID" msdata:childkey="FSA_SKILL_CODE_ID" />
+          <msdata:Relationship name="Fatc-Grade" msdata:parent="dbo_Grade" msdata:child="dbo_Fatc" msdata:parentkey="GRADE_VALUE" msdata:childkey="GRADE_VALUE" />
+          <msdata:Relationship name="School-SchoolType" msdata:parent="dbo_SchoolType" msdata:child="dbo_School" msdata:parentkey="SCHOOL_TYPE_ID" msdata:childkey="SCHOOL_TYPE_ID" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Seminar_x0020_Ver2_x0020_WH xmlns="" />
+  </Schema>
+</DataSourceView>
