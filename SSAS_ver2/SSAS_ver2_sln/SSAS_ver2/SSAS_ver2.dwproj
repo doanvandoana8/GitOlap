@@ -17,6 +17,56 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Cau_1.cube</Name>
+      <FullPath>Cau_1.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Cau_1.partitions</Name>
+          <FullPath>Cau_1.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cau_2.cube</Name>
+      <FullPath>Cau_2.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Cau_2.partitions</Name>
+          <FullPath>Cau_2.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cau_3.cube</Name>
+      <FullPath>Cau_3.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Cau_3.partitions</Name>
+          <FullPath>Cau_3.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cau_4.cube</Name>
+      <FullPath>Cau_4.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Cau_4.partitions</Name>
+          <FullPath>Cau_4.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cau_5.cube</Name>
+      <FullPath>Cau_5.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Cau_5.partitions</Name>
+          <FullPath>Cau_5.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
