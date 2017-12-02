@@ -1,0 +1,389 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a6f24a46-09f3-4fe8-95fb-be07e849f182" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Cau_7</ID>
+  <Name>Cau_7</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="2695cdaa-47c7-4a56-8bf1-43473f19a63f">
+      <ID>School Year</ID>
+      <Name>School Year</Name>
+      <DimensionID>School Year</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="325c98ad-6ccc-48b1-bc56-14eddbbc794c">
+          <AttributeID>SCHOOL YEAR ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3e5c1b5a-0906-45eb-9bfc-988d5bd150c7">
+          <AttributeID>START YEAR</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e4407bf1-5598-4fb2-a031-242359f4ddb2">
+          <AttributeID>END YEAR</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fd5d3aaa-2837-40ae-a638-3cd7108e10cf">
+      <ID>Data Level</ID>
+      <Name>Data Level</Name>
+      <DimensionID>Data Level</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="210eb572-0f15-4e39-9f23-719ac4093ad2">
+          <AttributeID>DATA LEVEL ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1319dbfb-4c49-438d-830b-9e9c0ec31ec8">
+          <AttributeID>DATA LEVEL NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d80c4cd2-8a62-43bb-8fdb-fbee9bfb9e1c">
+      <ID>District</ID>
+      <Name>District</Name>
+      <DimensionID>District</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="64d6d76c-592a-4216-9272-c958a54857ad">
+          <AttributeID>DISTRICT NUMBER</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5fcdbc8c-0310-444c-a127-bc546ccbcf82">
+          <AttributeID>DISTRICT NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="99b83e72-3521-4acf-83d2-1789d3e670ee">
+      <ID>School</ID>
+      <Name>School</Name>
+      <DimensionID>School</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9f0221af-4b91-4309-9d88-939df43efffb">
+          <AttributeID>SCHOOL ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ae2dfb7f-c33c-47cb-bade-b4857772b5d8">
+          <AttributeID>SCHOOL TYPE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ded7d962-87e0-493e-8792-491c36dd6496">
+          <AttributeID>SCHOOL NUMBER</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="12067b53-826a-42d7-950a-7bdca2ed983c">
+          <AttributeID>SCHOOL NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="536deac8-8e56-45b7-8fe7-f354bac66e5d">
+          <AttributeID>SCHOOL TYPE NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2779c3e6-3987-49bc-b4a5-46ecef97a601">
+      <ID>Sub Population</ID>
+      <Name>Sub Population</Name>
+      <DimensionID>Sub Population</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b48ba270-5f7e-4795-84ea-e629dbafd4be">
+          <AttributeID>SUB POPULATION ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0d08eac8-588d-4ffd-83dc-5be4834548b9">
+          <AttributeID>SUB POPULATION NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9120afe6-6b22-4d95-b23b-71868076bc41">
+      <ID>Fsa Skill Code</ID>
+      <Name>Fsa Skill Code</Name>
+      <DimensionID>Fsa Skill Code</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8fe81f50-448e-4e7e-8cb8-d229cb9a6c75">
+          <AttributeID>FSA SKILL CODE ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="abbde94b-c124-419a-b872-8fa89cd7ccb5">
+          <AttributeID>FSA SKILL CODE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="80367ff3-d608-4263-b74e-ffb10e383b6c">
+      <ID>Grade</ID>
+      <Name>Grade</Name>
+      <DimensionID>Grade</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c1ec5a8c-0081-4b34-a2f3-fad0868a1391">
+          <AttributeID>GRADE VALUE</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="d56e6144-321a-451f-b8d3-6f7774e1a587">
+      <ID>Fatc</ID>
+      <Name>Fatc</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="15ff710e-09df-438e-bd8a-c8931a1ce40f">
+          <ID>NUMBER EXPECTED WRITERS</ID>
+          <Name>NUMBER EXPECTED WRITERS</Name>
+          <Source dwd:design-time-name="aaeb7b12-8e16-49ff-8ea5-9f6d03d23a23">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d3f8f054-cffb-4286-b584-f48280f28d6a">
+              <TableID>dbo_Fatc</TableID>
+              <ColumnID>NUMBER_EXPECTED_WRITERS</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0e40bc91-d2ea-402b-8817-0885d6dd5fb1">
+          <ID>NUMBER WRITERS</ID>
+          <Name>NUMBER WRITERS</Name>
+          <Source dwd:design-time-name="395dc097-594c-4acc-9701-40e6f22ab260">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="05a5d96a-a911-49b4-866e-f2e9b83f72d3">
+              <TableID>dbo_Fatc</TableID>
+              <ColumnID>NUMBER_WRITERS</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="742f1339-e5dc-40ac-b7e1-3f7085883aaa">
+          <ID>NUMBER UNKNOWN</ID>
+          <Name>NUMBER UNKNOWN</Name>
+          <Source dwd:design-time-name="ae744295-5248-4de2-8c2c-4662ea7667c6">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="0daabb70-3ae3-444e-8811-37edeb958285">
+              <TableID>dbo_Fatc</TableID>
+              <ColumnID>NUMBER_UNKNOWN</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f3426932-44c8-4024-8bb7-33f93708c95c">
+          <ID>NUMBER BELOW</ID>
+          <Name>NUMBER BELOW</Name>
+          <Source dwd:design-time-name="9ceff872-0534-4897-9486-c0ddd11ab87b">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="4ce95f86-e974-40a8-8eef-b3fb73729298">
+              <TableID>dbo_Fatc</TableID>
+              <ColumnID>NUMBER_BELOW</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1c8b191e-3014-40b4-8e29-5e47dbddc4d2">
+          <ID>NUMBER MEETING</ID>
+          <Name>NUMBER MEETING</Name>
+          <Source dwd:design-time-name="5aec61ab-47f5-4908-a51d-b93c278d473a">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="c087c42a-e726-4c4b-869a-fb41598561a1">
+              <TableID>dbo_Fatc</TableID>
+              <ColumnID>NUMBER_MEETING</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0534d870-0efd-43a2-9954-de41ca6d3552">
+          <ID>NUMBER EXCEEDING</ID>
+          <Name>NUMBER EXCEEDING</Name>
+          <Source dwd:design-time-name="13939f67-fd4c-4954-98be-4a9493257907">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d37ff7c7-407e-432f-b6f3-bd266f8b8232">
+              <TableID>dbo_Fatc</TableID>
+              <ColumnID>NUMBER_EXCEEDING</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c8f53bc3-d0f3-4f3c-8c5e-04065c90506a">
+          <ID>SCORE</ID>
+          <Name>SCORE</Name>
+          <Source dwd:design-time-name="c6f23e8a-182c-4728-a13c-860068f39395">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="23ea0da3-6924-4fd1-9480-beb86056f3b5">
+              <TableID>dbo_Fatc</TableID>
+              <ColumnID>SCORE</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="57974462-dddf-4478-b07f-49c801248dcd">
+          <ID>Fatc Count</ID>
+          <Name>Fatc Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="910512d5-9b2b-4c4b-ba7f-8ad3e8dcfeaa">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="4bba9d6b-4c5f-4e99-866a-17e434be6e67">
+              <TableID>dbo_Fatc</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="07ef92f4-c2b0-4ba0-8a92-561232a6ea4c">
+          <CubeDimensionID>School Year</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0554f22c-c964-4feb-8bc2-8d0d5abd07a9">
+              <AttributeID>SCHOOL YEAR ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="630cb85c-5dde-47fb-8adc-384fd7210483">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="92adfcea-a186-4bbc-ac67-f9f12cf1db32">
+                    <TableID>dbo_Fatc</TableID>
+                    <ColumnID>SCHOOL_YEAR_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a7048347-81a5-4952-be43-ec0f76ee95a2">
+          <CubeDimensionID>Data Level</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d758c402-4441-47ce-ab7a-811b4790c9f5">
+              <AttributeID>DATA LEVEL ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bef7467f-5b7d-4150-82c6-e4828a4c84c2">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e06c2f73-5a6e-4025-99c8-df51df8d15e7">
+                    <TableID>dbo_Fatc</TableID>
+                    <ColumnID>DATA_LEVEL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="816191f5-ab01-401b-a3ed-a9c65d643baf">
+          <CubeDimensionID>District</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e10689f2-bf71-41ee-87bf-1da4050fdb2b">
+              <AttributeID>DISTRICT NUMBER</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="76f0b463-0aa6-442a-9704-1d88b2c32ecd">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cc35c41f-f048-4b72-885b-80c398cdc37a">
+                    <TableID>dbo_Fatc</TableID>
+                    <ColumnID>DISTRICT_NUMBER</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b16b3d83-49c6-494a-aacc-e5399d2bd7ba">
+          <CubeDimensionID>School</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="249043a3-bbe5-48b6-9ca4-ddf13ced100f">
+              <AttributeID>SCHOOL ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="27d4dae9-3c4e-4fc0-8ca8-82a74884119c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="42374268-63fa-4308-916d-757139f2e1c4">
+                    <TableID>dbo_Fatc</TableID>
+                    <ColumnID>SCHOOL_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d9b94ad1-3604-482a-940d-7eb113efe118">
+          <CubeDimensionID>Sub Population</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="837834bd-6762-4626-8f42-2a0cc91f507c">
+              <AttributeID>SUB POPULATION ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4ac652ed-a79e-4e8d-a579-8d70e68ed1fd">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="31b9a9f3-db91-4165-8e9d-b349a729128b">
+                    <TableID>dbo_Fatc</TableID>
+                    <ColumnID>SUB_POPULATION_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0217164c-7145-4d24-b68b-515ae99978ba">
+          <CubeDimensionID>Fsa Skill Code</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f13d2dda-f8ca-42c2-b779-337680d983f5">
+              <AttributeID>FSA SKILL CODE ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="da0be750-afeb-4b58-a5a2-38ed17d0f8d1">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ffc36b45-8388-4c6a-bb70-c067d9cb8ace">
+                    <TableID>dbo_Fatc</TableID>
+                    <ColumnID>FSA_SKILL_CODE_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0654494b-2f4a-4af1-b43e-1af3f33e6c5c">
+          <CubeDimensionID>Grade</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="35596a0f-9107-4952-bc5e-4c6cf80f8815">
+              <AttributeID>GRADE VALUE</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b34f0590-d5c4-4b04-b8e9-1d6b657e5ecb">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="45033aae-1cf8-44d3-8fc0-134bc4b09c8b">
+                    <TableID>dbo_Fatc</TableID>
+                    <ColumnID>GRADE_VALUE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="d0d69398-de5e-4c87-8c4c-039fafdd8ce9">
+    <DataSourceViewID>Seminar Ver2 WH</DataSourceViewID>
+  </Source>
+</Cube>

@@ -122,6 +122,41 @@
           <String>Cau_5</String>
         </ID>
       </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>1srSqZjtUJv3FltnD6Ba93Wi6A4=02-Dec-17 16:07:3502-Dec-17 16:07:35c1SLAUAn0KT26HvdEiJA99+AumM=02-Dec-17 16:07:3502-Dec-17 16:07:35</TimeStamp>
+        <ID>
+          <String>Cau_6</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>h5+QtFvaGw1uLkNULnJQv2TAmpE=02-Dec-17 16:18:1502-Dec-17 16:18:15XS2MpQeqM1Yhfn++INLzSIFGtvM=02-Dec-17 16:18:1502-Dec-17 16:18:15</TimeStamp>
+        <ID>
+          <String>Cau_7</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>5mEdOnTFsJridVyipEE9PVMjAjU=02-Dec-17 16:27:3102-Dec-17 16:27:31I0zk40WsRy95z0vkteE8MDtt9Dk=02-Dec-17 16:27:3102-Dec-17 16:27:31</TimeStamp>
+        <ID>
+          <String>Cau_8</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>P4AV5mV+U9Ysw+DR8BguFAGVnHY=02-Dec-17 16:41:4502-Dec-17 16:41:45SVI7wFHXycztPYqhLufv/0kRhy0=02-Dec-17 16:41:4502-Dec-17 16:41:45</TimeStamp>
+        <ID>
+          <String>Cau_9</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>t3jBOEupYAKUpogTgz9WJXMZ47c=02-Dec-17 16:46:3202-Dec-17 16:46:317pv53Ajo7plxXtvOSt7NxOMGIrI=02-Dec-17 16:46:3202-Dec-17 16:46:32</TimeStamp>
+        <ID>
+          <String>Cau_10</String>
+        </ID>
+      </ObjectSnapshot>
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
@@ -134,5 +169,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2017-12-01T12:09:38.51Z</LastDeployed>
+  <LastDeployed>2017-12-02T09:47:18.466667Z</LastDeployed>
 </DeploymentSnapshot>
