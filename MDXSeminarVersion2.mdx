@@ -1,0 +1,63 @@
+﻿--Câu 1: Liệt kê trường học có đối tượng (SUB_POPULATION) là “ENGLISH LANGUAGE LEARNER”  và số lượng người tham dự (NUMBER WRITERS), 
+--số lượng người dự kiến (NUMBER EXPECTED WRITERS)  trong năm học “2007/2008”.
+SELECT NON EMPTY ({[Measures].[NUMBER EXPECTED WRITERS],[Measures].[NUMBER WRITERS]}) ON COLUMNS,
+	   NON EMPTY ({[School].[SCHOOL NAME].[SCHOOL NAME]}) ON ROWS
+FROM [Cau_1]
+WHERE ([School Year].[START YEAR].[START YEAR].&[2007]);
+
+--Câu 2. Liệt kê số trường học của các quận ( DISTRICT_NAME)  trong năm học “2009/2010”.
+SELECT NON EMPTY ({[Measures].[SCHOOL ID Distinct Count]}) ON COLUMNS,
+	   NON EMPTY ({[District].[DISTRICT NAME].[DISTRICT NAME]}) ON ROWS
+FROM [Cau_2]
+WHERE ([School Year].[START YEAR].[START YEAR].&[2009]);
+
+--Câu 3. Số lượng người tham dự (NUMBER_WRITERS)   của khối (GRADE) 7 ở tất cả các trường 
+--trong năm học “2007/2008” tại quận (DISTRICT_NAME) “Sea to Sky”.
+SELECT NON EMPTY ({[Measures].[NUMBER WRITERS]}) ON COLUMNS,
+	   NON EMPTY ({[School].[SCHOOL NAME].[SCHOOL NAME]}) ON ROWS
+FROM [Cau_3]
+WHERE ([Grade].[GRADE VALUE].&[7],[School Year].[START YEAR].&[2007],[District].[DISTRICT NAME].&[Sea to Sky]);
+
+--Câu 4 Số lượng người tham gia (number_writer), số lượng người đạt (NUMBER_MEETING), 
+--số lượng người không đạt (NUMBER_BELOW) của các trường học với đối tượng tham gia 
+--có kĩ năng (FSA_SKILL_CODE) là  “Reading” có học tại năm học “2008/2009” và 
+--đối tượng (SUB_POPULATION) là “ABORIGINAL”.
+SELECT NON EMPTY ({[Measures].[NUMBER WRITERS],[Measures].[NUMBER MEETING],[Measures].[NUMBER BELOW]}) ON COLUMNS,
+	   NON EMPTY ({[School].[SCHOOL NAME].[SCHOOL NAME]}) ON ROWS
+FROM [Cau_4]
+WHERE ([Fsa Skill Code].[FSA SKILL CODE].&[Reading],[School Year].[START YEAR].&[2008],
+[Sub Population].[SUB POPULATION NAME].&[ABORIGINAL]);
+
+--Câu 5: Tổng điểm số (SCORE) của tất cả các trường học (SCHOOL_NAME) trong từng quận (DISTRICT_NAME) 
+--với kĩ năng là tính toán và tại năm học “2007/2008”.
+SELECT NON EMPTY ({[Measures].[SCORE]}) ON COLUMNS,
+	   NON EMPTY ({[District].[DISTRICT NAME].[DISTRICT NAME]}) ON ROWS
+FROM [Cau_5]
+WHERE ([Fsa Skill Code].[FSA SKILL CODE].&[Numeracy], [School Year].[START YEAR].&[2007]);
+
+--Câu 6: Số người vượt chỉ tiêu (NUMBER_EXCEEDING) của từng đối tượng (SUB_POPULATION) về kĩ năng tính toán
+-- (NUMERACY) trong năm học “2007/2008” với những trường học có cấp độ là cấp trường (DATA-LEVEL : SCHOOL LEVEL).
+SELECT NON EMPTY ({[Measures].[NUMBER EXCEEDING]}) ON COLUMNS,
+	   NON EMPTY ({[Sub Population].[SUB POPULATION NAME].[SUB POPULATION NAME]}) ON ROWS
+FROM [Cau_6]
+WHERE ([Fsa Skill Code].[FSA SKILL CODE].[FSA SKILL CODE].&[Numeracy], [School Year].[START YEAR].[START YEAR].&[2007],
+[Data Level].[DATA LEVEL NAME].[DATA LEVEL NAME].&[SCHOOL LEVEL]);
+
+--Câu 7: Số người không đạt (NUMBER_BELOW) và đạt (NUMBER_MEETING) với kĩ năng là kĩ năng viết của những trường học 
+--là trường công (PUBLIC_OR_INDEPENDENT: BC PUBLIC SCHOOL) trong năm học “2007/2008” và 
+--cấp độ là cấp quận (DATA_LEVEL : DISTRICT_LEVEL).
+
+SELECT NON EMPTY ({[Measures].[NUMBER MEETING],[Measures].[NUMBER BELOW]}) ON COLUMNS,
+	   NON EMPTY ({[School].[SCHOOL NAME].[SCHOOL NAME]}) ON ROWS
+FROM [Cau_7]
+WHERE ([Fsa Skill Code].[FSA SKILL CODE].[FSA SKILL CODE].&[Writing],
+[School].[SCHOOL TYPE NAME].[SCHOOL TYPE NAME].&[BC Public School],
+[School Year].[START YEAR].[START YEAR].&[2007]);
+
+--Câu 8 : Cho biết số lượng thí sinh thi không đạt với kĩ năng Reading, Writing ở tất cả các năm học.
+SELECT NON EMPTY { [Measures].[NUMBER BELOW] } ON COLUMNS, 
+		NON EMPTY { ([School Year].[START YEAR].[START YEAR].ALLMEMBERS *
+		 [School Year].[END YEAR].[END YEAR].ALLMEMBERS * 
+		 [Fsa Skill Code].[FSA SKILL CODE].[FSA SKILL CODE].ALLMEMBERS ) }  ON ROWS 
+FROM ( SELECT ( { [Fsa Skill Code].[FSA SKILL CODE].&[Reading], [Fsa Skill Code].[FSA SKILL CODE].&[Writing] } ) ON COLUMNS FROM [Cau_8]);
+

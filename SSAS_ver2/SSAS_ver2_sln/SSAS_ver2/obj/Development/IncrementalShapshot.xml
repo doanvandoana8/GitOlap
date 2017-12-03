@@ -96,7 +96,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>WKXbb/z9b2I+HBMHd8Hl/tGjRhs=01-Dec-17 18:36:4101-Dec-17 18:34:41P4XRQXfC45inFMFn0rBf3tIMzVQ=01-Dec-17 18:36:4101-Dec-17 18:34:41</TimeStamp>
+        <TimeStamp>+N2LIw07tUbdzRmCoxHXHyBCb8c=03-Dec-17 16:10:1901-Dec-17 18:34:41P4XRQXfC45inFMFn0rBf3tIMzVQ=03-Dec-17 16:10:1901-Dec-17 18:34:41</TimeStamp>
         <ID>
           <String>Cau_2</String>
         </ID>
@@ -169,5 +169,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2017-12-02T09:47:18.466667Z</LastDeployed>
+  <LastDeployed>2017-12-03T09:10:22.323333Z</LastDeployed>
 </DeploymentSnapshot>
