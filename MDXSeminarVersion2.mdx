@@ -3,7 +3,7 @@
 SELECT NON EMPTY ({[Measures].[NUMBER EXPECTED WRITERS],[Measures].[NUMBER WRITERS]}) ON COLUMNS,
 	   NON EMPTY ({[School].[SCHOOL NAME].[SCHOOL NAME]}) ON ROWS
 FROM [Cau_1]
-WHERE ([School Year].[START YEAR].[START YEAR].&[2007]);
+WHERE ([School Year].[START YEAR].[START YEAR].&[2007],[Sub Population].[SUB POPULATION NAME].[SUB POPULATION NAME].&[ENGLISH LANGUAGE LEARNER]);
 
 --Câu 2. Liệt kê số trường học của các quận ( DISTRICT_NAME)  trong năm học “2009/2010”.
 SELECT NON EMPTY ({[Measures].[SCHOOL ID Distinct Count]}) ON COLUMNS,
@@ -60,4 +60,24 @@ SELECT NON EMPTY { [Measures].[NUMBER BELOW] } ON COLUMNS,
 		 [School Year].[END YEAR].[END YEAR].ALLMEMBERS * 
 		 [Fsa Skill Code].[FSA SKILL CODE].[FSA SKILL CODE].ALLMEMBERS ) }  ON ROWS 
 FROM ( SELECT ( { [Fsa Skill Code].[FSA SKILL CODE].&[Reading], [Fsa Skill Code].[FSA SKILL CODE].&[Writing] } ) ON COLUMNS FROM [Cau_8]);
+
+--Câu 9 Số lượng người đạt (NUMBER_MEETING)  với kĩ năng là tính toán (NUMERACY) của những trường học thuộc khối trường tư 
+--(PUBLIC_OR_INDEPENDENT : BC Independent School) ở khối lớp 7 và đối với người tham dự có giới tính là nam
+-- (SUB_POPULATION: MALE) trong năm học “2014/2015”.
+
+SELECT NON EMPTY ({[Measures].[NUMBER MEETING]}) ON COLUMNS,
+	   NON EMPTY ({[School].[SCHOOL NAME].[SCHOOL NAME]}) ON ROWS
+FROM [Cau_10]
+WHERE ([Fsa Skill Code].[FSA SKILL CODE].&[Numeracy],[School].[SCHOOL TYPE NAME].&[BC Independent School]
+,[School Year].[START YEAR].&[2014],[Grade].[GRADE VALUE].&[7],[Sub Population].[SUB POPULATION NAME].&[MALE]);
+
+--Câu 10: Điểm đánh giá của các trường học trong năm “2012/2013”  ở quận New Westminster với 
+--đối tượng tham gia là ENGLISH LANGUAGE LEARNER.
+
+SELECT NON EMPTY ({[Measures].[SCORE]}) ON COLUMNS,
+	   NON EMPTY ({[School].[SCHOOL NAME].[SCHOOL NAME]}) ON ROWS
+FROM [Cau_10]
+WHERE ([School Year].[START YEAR].&[2012],
+[District].[DISTRICT NAME].&[New Westminster],
+[Sub Population].[SUB POPULATION NAME].&[ENGLISH LANGUAGE LEARNER]);
 
