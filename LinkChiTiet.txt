@@ -1,0 +1,9 @@
+﻿+ data_for_pivot_table (ver3 0412170232)(Da lam pivot).xlsx  Đây là file excel Hải làm, phần pivot table
+link : https://github.com/doanvandoana8/GitOlap/blob/master/data_for_pivot_table%20(ver3%200412170232)(Da%20lam%20pivot).xlsx
+
++SeminarOlapVer2.docx Đây là file trình bày
+link : https://github.com/doanvandoana8/GitOlap/blob/master/SeminarOlapVer2.docx
+
++ MDXSeminarVersion2.mdx  Đây là file code MDX của bài tập nhóm
+link : https://github.com/doanvandoana8/GitOlap/blob/master/MDXSeminarVersion2.mdx
+
