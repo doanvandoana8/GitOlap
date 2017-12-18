@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "BaiTapNhomSSRS", "BaiTapNhomSSRS\BaiTapNhomSSRS.rptproj", "{B27293C3-39CE-4CF5-95BE-F81884464A68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B27293C3-39CE-4CF5-95BE-F81884464A68}.Debug|Default.ActiveCfg = Debug
+		{B27293C3-39CE-4CF5-95BE-F81884464A68}.Debug|Default.Build.0 = Debug
+		{B27293C3-39CE-4CF5-95BE-F81884464A68}.Debug|Default.Deploy.0 = Debug
+		{B27293C3-39CE-4CF5-95BE-F81884464A68}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{B27293C3-39CE-4CF5-95BE-F81884464A68}.DebugLocal|Default.Build.0 = DebugLocal
+		{B27293C3-39CE-4CF5-95BE-F81884464A68}.Release|Default.ActiveCfg = Release
+		{B27293C3-39CE-4CF5-95BE-F81884464A68}.Release|Default.Build.0 = Release
+		{B27293C3-39CE-4CF5-95BE-F81884464A68}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
